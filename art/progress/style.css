@@ -1,0 +1,198 @@
+#header {
+  background-color: transparent;
+}
+.main {
+  background-color: #F5F5F5;
+  z-index: -1;
+  width: calc(100% + 50px);
+  height: 350px;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  margin: 0 0 0 -50px;
+}
+@media (max-width: 768px) {
+    .main {
+        height: 250px;
+    }
+}
+
+.cogwheel {
+  width: 272px;
+  height: 290px;
+  position: relative;
+  animation:scope_cw2 20s linear infinite;
+  display: inline-block;
+}
+.shatter {
+  width: 20px;
+  height: 20px;
+  background-color: #aab;
+  position: absolute;
+  transition: all 1s ease;
+  transform: rotate(45deg);
+  border-radius: 50%;
+  margin-left: 70px;
+  box-shadow:
+    0 0 0 30px #F5F5F5,
+    0 0 0 32px #aab,
+    0 0 0 35px #F5F5F5,
+    0 0 0 50px #aab;
+}
+.shatter:before {
+  content:'';
+  left:50%;
+  top: 50%;
+  margin-left: -13px;
+  margin-top: -13px;
+  width: 26px;
+  height: 26px;
+  display: block;
+  position: absolute;
+  box-shadow:
+    65px 0px 0 #aab,
+    -65px 0px 0 #aab,
+    0 65px 0 #aab,
+    0 -65px 0 #aab;
+  border-radius: 20%;
+}
+.shatter:after {
+  content:'';
+  left:50%;
+  top: 50%;
+  margin-left: -13px;
+  margin-top: -13px;
+  width: 26px;
+  height: 26px;
+  display: block;
+  position: absolute;
+  box-shadow:
+    65px 0px 0 #aab,
+    -65px 0px 0 #aab,
+    0 65px 0 #aab,
+    0 -65px 0 #aab;
+  border-radius: 20%;
+  transform: rotate(45deg);
+}
+
+.t1 { left: -5px; top:-5px; transform: rotate(0deg);}
+.t2 { left: 133px; top:-5px; transform: rotate(22.5deg);}
+.t3 { left: 133px; top:133px;  transform: rotate(0deg);}
+/*.t4 { left: 133px; top:263px;  transform: rotate(0deg);}*/
+
+.color1.shatter {
+  background-color: #FF50D8;
+  box-shadow:
+    0 0 0 15px #F5F5F5,
+    0 0 0 21px #FF50D8,
+    0 0 0 30px #F5F5F5,
+    0 0 0 32px #F5F5F5,
+    0 0 0 50px #FF50D8;
+}
+.color1.shatter:before {
+  box-shadow:
+    65px 0px 0 #FF50D8,
+    -65px 0px 0 #FF50D8,
+    0 65px 0 #FF50D8,
+    0 -65px 0 #FF50D8;
+}
+.color1.shatter:after {
+  box-shadow:
+    65px 0px 0 #FF50D8,
+    -65px 0px 0 #FF50D8,
+    0 65px 0 #FF50D8,
+    0 -65px 0 #FF50D8;
+}
+
+.color2.shatter {
+  background-color: #8B8BFD;
+  box-shadow:
+    0 0 0 13px #8B8BFD,
+    0 0 0 30px #F5F5F5,
+    0 0 0 32px #8B8BFD,
+    0 0 0 38px #F5F5F5,
+    0 0 0 50px #8B8BFD;
+}
+.color2.shatter:before {
+  box-shadow:
+    65px 0px 0 #8B8BFD,
+    -65px 0px 0 #8B8BFD,
+    0 65px 0 #8B8BFD,
+    0 -65px 0 #8B8BFD;
+}
+.color2.shatter:after {
+  box-shadow:
+    65px 0px 0 #8B8BFD,
+    -65px 0px 0 #8B8BFD,
+    0 65px 0 #8B8BFD,
+    0 -65px 0 #8B8BFD;
+}
+
+.color3.shatter {
+  background-color: #D6D346;
+  box-shadow:
+    0 0 0 3px #D6D346,
+    0 0 0 15px #F5F5F5,
+    0 0 0 18px #D6D346,
+    0 0 0 25px #F5F5F5,
+    0 0 0 27px #D6D346,
+    0 0 0 30px #F5F5F5,
+    0 0 0 32px #D6D346,
+    0 0 0 40px #F5F5F5,
+    0 0 0 50px #D6D346;
+}
+.color3.shatter:before {
+  box-shadow:
+    65px 0px 0 #D6D346,
+    -65px 0px 0 #D6D346,
+    0 65px 0 #D6D346,
+    0 -65px 0 #D6D346;
+}
+.color3.shatter:after {
+  box-shadow:
+    65px 0px 0 #D6D346,
+    -65px 0px 0 #D6D346,
+    0 65px 0 #D6D346,
+    0 -65px 0 #D6D346;
+}
+
+.t3.shatter {
+  background-color: #f00;
+  box-shadow:
+    0 0 0 10px #F5F5F5,
+    0 0 0 13px #f00,
+    0 0 0 30px #F5F5F5,
+    0 0 0 32px #f00,
+    0 0 0 35px #F5F5F5,
+    0 0 0 50px #f00;
+}
+.t3.shatter:before {
+  box-shadow:
+    65px 0px 0 #f00,
+    -65px 0px 0 #f00,
+    0 65px 0 #f00,
+    0 -65px 0 #f00;
+}
+.t3.shatter:after {
+  box-shadow:
+    65px 0px 0 #f00,
+    -65px 0px 0 #f00,
+    0 65px 0 #f00,
+    0 -65px 0 #f00;
+}
+
+.cw {animation:scope_cw 20s linear infinite;}
+.ccw {animation:scope_ccw 20s linear infinite;}
+
+
+@keyframes scope_cw
+{
+  from {transform: rotate(22.5deg)}
+  to {transform: rotate(382.5deg)}
+}
+@keyframes scope_ccw
+{
+  from {transform: rotate(0deg)}
+  to {transform: rotate(-360deg)}
+}
